@@ -10,8 +10,10 @@ for letter in message:
     if letter in c :
         if newpos== 26:
             newpos=newpos -26
+        encrypted=encrypted + c[newpos]
 
     position1= alphabet.find(letter)
+    newposition1= position1 + key
     if letter in alphabet:
         if newposition1== 26:
             newposition1= newposition1-26
